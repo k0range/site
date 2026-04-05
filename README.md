@@ -40,3 +40,19 @@ As soon as these are finished, I'll integrate them with the [current site](https
 - Better Auth (For Admin page authentication)
 - Prisma (for database access)
   - Features requiring a database are currently WIP
+
+## AI Usage
+
+This section describes the AI/LLM tools used during development and how they were utilized.
+
+- ChatGPT, Claude
+  - Primarily used for questions regarding implementation approaches (especially those specific to Next.js) without directly access the codebase.
+  - Examples:
+    - "How can I run a script on all pages in Next.js?"
+    - "What is a good implementation method for structuring flat DB data where `replyTo` points to other element IDs into a nested `replies` structure?"
+    - "What is a good approach for handling both structures like locale/slug/index.mdx and locale/slug.mdx in content-collections?"
+  - Also used for troubleshooting errors.
+- GitHub Copilot
+  - Used for code completion in VSCode.
+- Others
+  - Used LLM-based translation tools for some text localization and Devlog translations.

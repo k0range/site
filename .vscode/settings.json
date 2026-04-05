@@ -1,0 +1,10 @@
+{
+  "i18n-ally.localesPaths": [
+    "messages",
+    "src/i18n"
+  ],
+  "i18n-ally.sourceLanguage": "ja",
+  "i18n-ally.keystyle": "nested",
+  "loccy.sourceLocale": "ja",
+  "tailwindCSS.lint.suggestCanonicalClasses": "ignore"
+}

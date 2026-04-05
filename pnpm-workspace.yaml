@@ -1,0 +1,9 @@
+onlyBuiltDependencies:
+  - '@parcel/watcher'
+  - '@prisma/engines'
+  - '@swc/core'
+  - contentlayer2
+  - esbuild
+  - prisma
+  - protobufjs
+  - sharp

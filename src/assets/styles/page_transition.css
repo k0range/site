@@ -1,0 +1,12 @@
+.page_transition {
+  opacity: 0;
+  transform: translateY(16px);
+  transition: transform 400ms cubic-bezier(0.3, 0.35, 0.22, 0.95),
+              translate 400ms cubic-bezier(0.3, 0.35, 0.22, 0.95),
+              opacity 400ms cubic-bezier(0.3, 0.35, 0.22, 0.95);
+
+  &.show {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

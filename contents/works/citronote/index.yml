@@ -1,0 +1,11 @@
+order: 1
+featured: true
+name:
+  en: Citronote
+description: 
+  ja: "PC向けノートソフトウェア"
+  en: "A note-taking software for Windows."
+coverIcon: "/static-assets/works-cover/citronote/icon.svg"
+coverPyPercent: 18
+coverBgCss: "linear-gradient(#feaf11, #da9302)"
+releasedAt: 2023-11-07

@@ -1,0 +1,18 @@
+order: 3
+featured: true
+name:
+  ja: このサイト
+  en: This website
+coverIcon: "/static-assets/works-cover/this-site/logo.svg"
+coverPyPercent: 24
+coverBgCss: "linear-gradient(#5CADCF)" #"linear-gradient(#4e97ff, #0047b3)"
+siteUrl: "https://misskey-wrapped.korange.work/"
+releasedAt: "2026-04-05"
+description: 
+  ja: "自分の個人サイト。自己紹介やブログ、その他短縮リンク機能など色々詰め込んである。"
+  en: "My personal website. It contains various features such as self-introduction, blog, and other short link functions."
+content:
+  ja: |
+    A
+  en: |
+    A

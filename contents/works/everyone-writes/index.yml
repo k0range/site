@@ -1,0 +1,17 @@
+order: 4
+featured: true
+name:
+  en: Everyone Writes
+coverIcon: "/static-assets/works-cover/everyone-writes/logo.svg"
+coverPyPercent: 30
+coverBgCss: "linear-gradient(#181818)"
+siteUrl: "https://misskey-wrapped.korange.work/"
+releasedAt: "2025-12-31"
+description: 
+  ja: "みんなで共通のキャンバスに書き込めるサイト"
+  en: "A website where everyone can draw on a shared canvas."
+content:
+  ja: |
+    A
+  en: |
+    A

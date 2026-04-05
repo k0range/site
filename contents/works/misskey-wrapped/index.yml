@@ -1,0 +1,45 @@
+order: 2
+featured: true
+name:
+  en: Misskey Wrapped 2025
+coverIcon: "/static-assets/works-cover/misskey-wrapped/logo.svg"
+coverPyPercent: 18
+coverBgImage: "/static-assets/works-cover/misskey-wrapped/bg.png"
+siteUrl: "https://misskey-wrapped.korange.work/"
+releasedAt: "2025-12-31"
+description: 
+  ja: "Misskeyでの１年の活動を振り返るWebツール"
+  en: "A note-taking software for Windows."
+content:
+  ja: |
+    Misskeyで「Spotify Wrapped」や「Discord Checkpoint」のような一年の振り返りができるウェブアプリを作成しました。
+
+    Misskey.io でサイトを公開したところ、**1248リアクション・879リノート**というものすごい反響をいただきました。
+    <a href="https://misskey.io/notes/agw4geahkd4x036e"></a>
+
+    また、サイトは
+
+    ## 反省点
+    多くの方に試していただいた一方で、一部のサーバー運営者からはサーバーに負荷がかかるという指摘もいただきました。
+
+    2026年版も作るとしたら、　（というか有名サービスのWrapped機能はそんな感じなのだと思う）
+
+    また今回のサイトはノート数やリアクション数、トップリアクションといった「統計」を中心とした内容でしたが、実際のノート内容を振り返るような「回顧」に焦点を当てた構成にしてもよかったかもしれません。
+    
+    実際参考にしたコンテンツの一つである YouTube Wrapped では、LLMを活用して期間ごとの好みや傾向を分析し、振り返るような構成になっていました。
+  en: |
+    I created a web application for Misskey that allows users to review their year, similar to "Spotify Wrapped" or "Discord Checkpoint."
+
+    After launching the site on Misskey.io, it received an incredible response of **1248 reactions and 879 renote**s.
+    {/*<Tweet id="2004922645419336178" />*/}
+
+    The site also:
+
+    ## Points of Reflection
+    While many people tried it out, some server administrators pointed out that it put a load on their servers.
+
+    If I were to create a 2026 version, (which is what I imagine popular services' Wrapped features are like)
+
+    Additionally, this site focused on "statistics" such as the number of notes, reactions, and top reactions. However, it might have been better to focus on "recollection," reviewing the actual content of the notes.
+
+    Indeed, one of the reference contents, YouTube Wrapped, used LLMs to analyze preferences and trends over specific periods and structured the review accordingly.

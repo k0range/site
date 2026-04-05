@@ -1,0 +1,54 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
+// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
+
+generator client {
+  provider = "prisma-client"
+  output   = "../generated/prisma"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+model Comment {
+  id  String  @id @default(cuid())
+
+  showPublicly  Boolean @default(false)
+
+  place  String // 投稿系は post/[locale]/[slug]
+
+  name       String?
+  isOwner    Boolean  @default(false)
+  visitorId  String? // OwnerはIdを持たない
+
+  replyTo  String?
+
+  content  String
+
+  createdAt  DateTime  @default(now())
+  updatedAt  DateTime  @updatedAt
+}
+
+model EmailSubscription {
+  id           String  @id @default(cuid())
+
+  email        String  @unique()
+
+  manageToken  String  @unique()
+
+  createdAt    DateTime  @default(now())
+  updatedAt    DateTime  @updatedAt
+}
+
+model Like {
+  place      String // 投稿系は post/[locale]/[slug]
+  visitorId  String
+
+  createdAt  DateTime  @default(now())
+  updatedAt  DateTime  @updatedAt
+
+  @@id([place, visitorId])
+}

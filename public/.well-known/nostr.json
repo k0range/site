@@ -1,0 +1,14 @@
+{
+ 	"names": {
+ 		"_": "b3c7d9a3313961fc21853b7ca35736100e6e9f7d960e8d01aaadca805b806d6d"
+ 	},
+  "relays": {
+    "b3c7d9a3313961fc21853b7ca35736100e6e9f7d960e8d01aaadca805b806d6d": [
+      "wss://yabu.me",
+      "wss://relay.damus.io",
+      "wss://nos.lol",
+      "wss://relay.nostr.band",
+      "wss://relay-jp.nostr.wirednet.jp"
+    ]
+  }
+}

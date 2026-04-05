@@ -1,0 +1,46 @@
+export default function DashedContainerDivider({ className }: { className?: string }) {
+  return (
+    <div className={`rounded-full overflow-hidden h-[3px] ${className}`}>
+      <svg
+        width="100%"
+        className=""
+        height="3"
+        viewBox="0 0 992 3"
+        preserveAspectRatio="xMidYMid slice"
+      >
+        <path d="M8 3C8.82843 3 9.5 2.32843 9.5 1.5C9.5 0.671573 8.82843 0 8 0V1.5V3ZM0 1.5V3H8V1.5V0H0V1.5Z"     fill="#1388B9"/>
+        <path d="M984 0C983.172 0 982.5 0.671573 982.5 1.5C982.5 2.32843 983.172 3 984 3V1.5V0ZM984 1.  5V3H992V1.      5V0H984V1.5Z" fill="#1388B9"/>
+        <path d="M24 1.5H40" stroke="#1388B9" strokeWidth="3" strokeLinecap="round"/>
+        <path d="M56 1.5H72" stroke="#1388B9" strokeWidth="3" strokeLinecap="round"/>
+        <path d="M88 1.5H104" stroke="#1388B9" strokeWidth="3" strokeLinecap="round"/>
+        <path d="M120 1.5H136" stroke="#1388B9" strokeWidth="3" strokeLinecap="round"/>
+        <path d="M152 1.5H168" stroke="#1388B9" strokeWidth="3" strokeLinecap="round"/>
+        <path d="M184 1.5H200" stroke="#1388B9" strokeWidth="3" strokeLinecap="round"/>
+        <path d="M216 1.5H232" stroke="#1388B9" strokeWidth="3" strokeLinecap="round"/>
+        <path d="M248 1.5H264" stroke="#1388B9" strokeWidth="3" strokeLinecap="round"/>
+        <path d="M280 1.5H296" stroke="#1388B9" strokeWidth="3" strokeLinecap="round"/>
+        <path d="M312 1.5H328" stroke="#1388B9" strokeWidth="3" strokeLinecap="round"/>
+        <path d="M664 1.5H680" stroke="#1388B9" strokeWidth="3" strokeLinecap="round"/>
+        <path d="M696 1.5H712" stroke="#1388B9" strokeWidth="3" strokeLinecap="round"/>
+        <path d="M728 1.5H744" stroke="#1388B9" strokeWidth="3" strokeLinecap="round"/>
+        <path d="M760 1.5H776" stroke="#1388B9" strokeWidth="3" strokeLinecap="round"/>
+        <path d="M792 1.5H808" stroke="#1388B9" strokeWidth="3" strokeLinecap="round"/>
+        <path d="M824 1.5H840" stroke="#1388B9" strokeWidth="3" strokeLinecap="round"/>
+        <path d="M856 1.5H872" stroke="#1388B9" strokeWidth="3" strokeLinecap="round"/>
+        <path d="M888 1.5H904" stroke="#1388B9" strokeWidth="3" strokeLinecap="round"/>
+        <path d="M920 1.5H936" stroke="#1388B9" strokeWidth="3" strokeLinecap="round"/>
+        <path d="M952 1.5H968" stroke="#1388B9" strokeWidth="3" strokeLinecap="round"/>
+        <path d="M344 1.5H360" stroke="#1388B9" strokeWidth="3" strokeLinecap="round"/>
+        <path d="M376 1.5H392" stroke="#1388B9" strokeWidth="3" strokeLinecap="round"/>
+        <path d="M408 1.5H424" stroke="#1388B9" strokeWidth="3" strokeLinecap="round"/>
+        <path d="M440 1.5H456" stroke="#1388B9" strokeWidth="3" strokeLinecap="round"/>
+        <path d="M472 1.5H488" stroke="#1388B9" strokeWidth="3" strokeLinecap="round"/>
+        <path d="M504 1.5H520" stroke="#1388B9" strokeWidth="3" strokeLinecap="round"/>
+        <path d="M536 1.5H552" stroke="#1388B9" strokeWidth="3" strokeLinecap="round"/>
+        <path d="M568 1.5H584" stroke="#1388B9" strokeWidth="3" strokeLinecap="round"/>
+        <path d="M600 1.5H616" stroke="#1388B9" strokeWidth="3" strokeLinecap="round"/>
+        <path d="M632 1.5H648" stroke="#1388B9" strokeWidth="3" strokeLinecap="round"/>
+      </svg>
+    </div>
+  )
+}

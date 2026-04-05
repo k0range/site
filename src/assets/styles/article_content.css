@@ -1,0 +1,332 @@
+.articleContent > p, .articleContent li {
+  line-height: 2rem;
+}
+
+/* ブロック系の要素 */
+.articleContent > p, .articleContent>ul, .articleContent>ol, .articleContent blockquote, .articleContent figure, .articleContent hr, .articleContent h1, .articleContent h6 {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.articleContent .callout p,
+.articleContent .callout ul,
+.articleContent .callout ol,
+.articleContent .callout blockquote,
+.articleContent .callout figure,
+.articleContent .callout hr,
+.articleContent .callout h1,
+.articleContent .callout h6 {
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
+}
+.articleContent .callout p:first-child {
+  margin-top: 0;
+}
+.articleContent .callout p:last-child {
+  margin-bottom: 0;
+}
+
+.articleContent h1 {
+  font-weight: 700;
+  color: #1388b9;
+}
+.articleContent h1::before {
+  content: "# ";
+  font-weight: 700;
+  color: #1388b9;
+  opacity: 0.5;
+}
+
+.articleContent h2 {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #1388b9;
+  position: relative;
+  margin-top: 2.5rem;
+  padding-bottom: 0.5rem;
+}
+.articleContent h2::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 3px;
+  background-color: #1388b9;
+  border-radius: 3px;
+}
+
+.articleContent h3 {
+  position: relative;
+  display: inline-block;
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #1388b9;
+  margin-top: 2.5rem;
+  padding-bottom: 0.4rem;
+}
+.articleContent h3::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 3px;
+  background-color: #1388b9;
+  border-radius: 3px;
+}
+
+.articleContent h4 {
+  position: relative;
+  display: inline-block;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #1388b9;
+  margin-top: 2rem;
+  padding-bottom: 0.3rem;
+}
+.articleContent h4::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 3px;
+  background-color: #1388b9;
+  border-radius: 3px;
+}
+
+.articleContent h5 {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #1388b9;
+  margin-top: 1.5rem;
+}
+
+.articleContent h6 {
+  color: #1388b9;
+  font-weight: 700;
+}
+.articleContent h6::before {
+  content: "###### ";
+  color: #1388b9;
+  opacity: 0.5;
+}
+
+.articleContent blockquote {
+  position: relative;
+  padding-left: 1rem;
+  color: #1388b9;
+  font-style: italic;
+}
+.articleContent blockquote::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 3px;
+  height: 100%;
+  background-color: #1388b9;
+  border-radius: 3px;
+}
+
+.articleContent ul {
+  padding-left: 24px;
+  margin-left: -2px;
+}
+
+.articleContent ul>li {
+  list-style-type: disc;
+  padding-left: 0.325em;
+}
+
+.articleContent ul>li::marker {
+  color: #1388b9;
+}
+
+.articleContent ol>li {
+  position: relative;
+  align-items: center;
+  padding-left: 42px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  list-style-type: none;
+  counter-increment: num 1;
+}
+
+.articleContent ol>li>ol {
+  margin-left: -18px;
+}
+
+.articleContent ol>li::before {
+  margin: 3px 0;
+  background-color: #1388b9;
+  border-radius: 100%;
+  color: #fdf6ee;
+  content: counter(num);
+  font-size: .9em;
+  font-weight: 700;
+  left: 0;
+  top: 0;
+  position: absolute;
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  width: 1.8em;
+  height: 1.8em;
+}
+
+.articleContent pre {
+  font-family: "Consolas", "Monaco", "Menlo", monospace;
+  background-color: hsl(198, 2%, 16%);
+  font-size: 15px;
+  border-radius: 16px;
+  color: #fdf6ee;
+  padding: 1.25rem 1.25rem;
+  margin-left: -10px;
+  margin-right: -10px;
+}
+
+.articleContent p>code {
+  font-family: "Consolas", "Monaco", "Menlo", monospace;
+  background-color: hsl(198, 2%, 16%, 16%);
+  font-size: 15px;
+  padding: .2em .4em;
+  margin: 0 .2em;
+  border-radius: 8px;
+  vertical-align: .08em;
+}
+
+.articleContent figure[data-rehype-pretty-code-figure]>figcaption {
+  font-size: 15px;
+  font-family: "Consolas", "Monaco", "Menlo", monospace;
+  border-radius: 16px 16px 0px 0px;
+  color: #fdf6ee;
+  padding: 0.5rem 1.25rem;
+  margin-left: -10px;
+  margin-right: -10px;
+  background-color: #24292ee6;
+}
+.articleContent figure[data-rehype-pretty-code-figure] > figcaption + pre {
+  border-radius: 0px 0px 16px 16px;
+}
+.articleContent table {
+  word-break: break-all;
+  width: calc(100% + 20px);
+  border-collapse: separate;
+  border-spacing: 0;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  font-size: 0.95rem;
+  line-height: 1.8;
+  border-radius: 12px;
+  margin-left: -10px;
+  margin-right: -10px;
+  border: 3px solid #1388b9;
+}
+
+/* ヘッダー */
+.articleContent thead {
+  width: 100%;
+}
+.articleContent thead th {
+  background-color: #1388b9;
+  color: #fdf6ee;
+  font-weight: 700;
+  padding: 0.75rem 1.25rem;
+  text-align: left;
+}
+
+/* ボディ */
+.articleContent tbody td {
+  padding: 0.75rem 1.25rem;
+  border-bottom: 2px solid rgba(19, 136, 185, 0.15);
+  vertical-align: top;
+}
+
+/* 最終行の下線を消す */
+.articleContent tbody tr:last-child td {
+  border-bottom: none;
+}
+
+/* 縞模様 *//*
+.articleContent tbody tr:nth-child(odd) {
+  background-color: rgba(255, 255, 255, 1);
+}
+.articleContent tbody tr:nth-child(even) {
+  background-color: rgba(255, 255, 255, 0.5);
+}*/
+
+/* th（行見出し用） */
+.articleContent tbody th {
+  padding: 0.75rem 1rem;
+  font-weight: 700;
+  color: #1388b9;
+  text-align: left;
+  background-color: rgba(19, 136, 185, 0.08);
+  border-bottom: 1px solid rgba(19, 136, 185, 0.15);
+}
+
+/* キャプション */
+.articleContent table caption {
+  caption-side: top;
+  text-align: left;
+  font-weight: 700;
+  color: #1388b9;
+  margin-bottom: 0.5rem;
+}
+
+/* 横スクロール対応（スマホ） */
+.articleContent .table-wrapper {
+  overflow-x: auto;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.articleContent .footnotes {
+  font-size: 0.825rem;
+  border-top: 1px solid #1388b960;
+  margin-top: 32px;
+  padding-top: 6px;
+}
+.articleContent .footnotes .sr-only {
+  display: none;
+}
+.articleContent .footnotes .sr-only::after {
+  display: none;
+}
+.articleContent .footnotes ol>li {
+  padding-left: 0;
+  color: #1388b9f0;
+  list-style-type: decimal;
+  list-style-position: inside;
+}
+.articleContent .footnotes ol>li::before {
+  display: none;
+}
+.articleContent .footnotes ol>li p {
+  display: inline;
+}
+
+.articleContent sup > a[data-footnote-ref="true"] {
+  color: #1388b9;
+
+  &:hover {
+    text-decoration: underline;
+    text-underline-offset: 2px;
+  }
+
+  &::before {
+    content: "[";
+  }
+  &::after {
+    content: "]";
+  }
+}
+
+.articleContent a:not(figure a, sup a) {
+  color: #1388b9;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}

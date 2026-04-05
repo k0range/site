@@ -25,8 +25,6 @@ export async function GET(
   req: Request,
   { params }: { params: Promise<{ path: string[] }> }
 ) {
-  console.log(params)
-
   const filePath = path.join(process.cwd(), 'contents', ...(await params).path)
 
   const buffer = await fs.readFile(filePath);

@@ -1,5 +1,7 @@
-import { headers } from 'next/headers';
+import fs from 'fs/promises';
+import path from 'path';
 import Image from 'next/image';
+import { getImageSize } from 'next/dist/server/image-optimizer';
 import { DetailedHTMLProps, HTMLAttributes } from 'react';
 
 export default async function CustomImg({
@@ -9,12 +11,17 @@ export default async function CustomImg({
   alt: string;
 }) {
   if (props.src.startsWith("/content-assets/")) {
-    const headersData = await headers();
-    const protocol = headersData.get('x-forwarded-proto') || 'http';
-    const host = headersData.get('host');
-    const apiBase = `${protocol}://${host ?? "localhost:3000"}`;
+    let dimensions: { width?: number; height?: number } = {};
 
-    const dimensions: { width?: number; height?: number } = await (await fetch(`${apiBase}/content-assets/sizes/${props.src.replace("/content-assets/", "")}`)).json();
+    try {
+      const relativePath = props.src.replace(/^\/+content-assets\//, '');
+      const filePath = path.join(process.cwd(), 'contents', ...relativePath.split('/'));
+      const buffer = await fs.readFile(filePath);
+      const size = await getImageSize(buffer);
+      dimensions = { width: size.width, height: size.height };
+    } catch {
+      dimensions = {};
+    }
 
     return (
       <Image
